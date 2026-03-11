@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dadabaka Team</title>
+<style>
+  /* --- Grundläggande styling --- */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #111111);
+    color: #fff;
+    text-align: center;
+  }
+
+  header {
+    background-color: #0f2027;
+    padding: 40px 20px;
+  }
+  header h1 {
+    color: #00ff88;
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+  nav a {
+    color: #00aaff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+  }
+
+  section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  h2 {
+    color: #00ff88;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #0f2027;
+    color: #888;
+    font-size: 0.9em;
+  }
+
+  /* --- Responsiv mobilstil --- */
+  @media (max-width: 500px) {
+    header h1 { font-size: 2em; }
+    nav a { display: block; margin: 5px 0; }
+    h2 { font-size: 1.5em; }
+    p { font-size: 0.95em; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>The Dadabaka Team</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#rules">Rules</a>
+    <a href="#server">Server</a>
+    <a href="#bot">DadaCore</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome!</h2>
+  <p>Welcome to <strong>The Dadabaka Team</strong> – a friendly Minecraft & Discord community where you can chat, build, and have fun! Join our adventures and meet new friends.</p>
+  <a href="https://discord.gg/hupDvMN2dq" class="button">Join our Discord</a>
+</section>
+
+<section id="rules">
+  <h2>Server Rules</h2>
+  <p>1️⃣ Be respectful to everyone.<br>
+  2️⃣ No griefing or stealing.<br>
+  3️⃣ No hacks, exploits, or bugs.<br>
+  4️⃣ Keep spam and NSFW content out.<br>
+  5️⃣ Follow staff instructions at all times.</p>
+</section>
+
+<section id="server">
+  <h2>Server Info</h2>
+  <p>Minecraft Server IP: <strong>mc.dadabaka.com</strong><br>
+  Version: <strong>1.20</strong><br>
+  PvP: <strong>Enabled</strong></p>
+</section>
+
+<section id="bot">
+  <h2>DadaCore Bot</h2>
+  <p>DadaCore is our official Discord bot for moderation, tickets, and fun commands. Keep the server safe and fun!</p>
+</section>
+
+<footer>
+  &copy; 2026 The Dadabaka Team. All rights reserved.
+</footer>
+
+</body>
+</html>
