@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Multiple Time Zones</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .clock { margin: 20px; padding: 20px; border: 1px solid #ccc; }
+        .timezone { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div id="clocks"></div>
+
+<script>
+    function updateClocks() {
+        const timeZones = {
+            'UTC': new Date().toUTCString(),
+            'EST': new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }),
+            'CST': new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' }),
+            'PST': new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }),
+            'GMT': new Date().toLocaleString('en-US', { timeZone: 'Europe/London' }),
+            'CET': new Date().toLocaleString('en-US', { timeZone: 'Europe/Berlin' })
+        };
+
+        const clocksDiv = document.getElementById('clocks');
+        clocksDiv.innerHTML = '';
+
+        for (const [zone, time] of Object.entries(timeZones)) {
+            const clockElement = document.createElement('div');
+            clockElement.className = 'timezone';
+            clockElement.innerText = `${zone}: ${time}`;
+            clocksDiv.appendChild(clockElement);
+        }
+    }
+
+    setInterval(updateClocks, 1000);
+    updateClocks(); // Initial call
+</script>
+
+</body>
+</html>
